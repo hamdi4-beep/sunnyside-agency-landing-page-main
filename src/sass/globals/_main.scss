@@ -1,0 +1,38 @@
+@use './variables' as *;
+
+main {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            font-family: $ff-secondary;
+            font-size: 2.5rem;
+            color: $clr-dark-desaturated-blue;
+        }
+
+        p {
+            font-family: $ff-base;
+            color: $clr-grayish-blue;
+            line-height: 1.8;
+        }
+    }
+
+    .content {
+        display: grid;
+        padding: 4em;
+        outline: 1px solid blue;
+
+        h2 {
+            margin-bottom: .8em;
+        }
+
+        button {
+            margin-top: 2.5em;
+            font-weight: $fw-900;
+            text-transform: uppercase;
+        }
+    }
+}

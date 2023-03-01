@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "";
+  min-height: 100vh;
+}
+
+picture,
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  display: block;
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+header {
+  background-image: url("../../../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: -50%;
+  outline: 1px solid blue;
+  height: 100vh;
+}
+header nav {
+  padding: 2em 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-items {
+  display: none;
+}
+header .content {
+  text-align: center;
+  margin-top: 5em;
+}
+header .arrow-down {
+  margin-inline: auto;
+  margin-top: 3em;
+}
+header .big-text {
+  font-family: Fraunces;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.5rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main section h2 {
+  font-family: Fraunces;
+  font-size: 2.5rem;
+  color: hsl(212deg, 27%, 19%);
+}
+main section p {
+  font-family: Barlow;
+  color: hsl(210deg, 4%, 67%);
+  line-height: 1.8;
+}
+main .content {
+  display: grid;
+  padding: 4em;
+  outline: 1px solid blue;
+}
+main .content h2 {
+  margin-bottom: 0.8em;
+}
+main .content button {
+  margin-top: 2.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=index.css.map */

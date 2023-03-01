@@ -1,0 +1,37 @@
+@use './variables' as *;
+
+header {
+    background-image: url('../../../images/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: -50%;
+    outline: 1px solid blue;
+    height: 100vh;
+
+    nav {
+        padding: 2em 1.5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 5em;
+    }
+
+    .arrow-down {
+        margin-inline: auto;
+        margin-top: 3em;
+    }
+
+    .big-text {
+        font-family: $ff-secondary;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $clr-white;
+        letter-spacing: .5rem;
+    }
+}

@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: '';
+    min-height: 100vh;
+}
+
+picture,
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    background: none;
+    display: block;
+    font: inherit;
+    border: none;
+    outline: none;
+}
