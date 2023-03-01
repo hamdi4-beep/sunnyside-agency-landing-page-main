@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "";
+  font-family: Fraunces;
   min-height: 100vh;
 }
 
@@ -67,7 +67,6 @@ main section h2 {
   color: hsl(212deg, 27%, 19%);
 }
 main section p {
-  font-family: Barlow;
   color: hsl(210deg, 4%, 67%);
   line-height: 1.8;
 }

@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 *,
 *::before,
 *::after {
@@ -7,7 +9,7 @@
 }
 
 body {
-    font-family: '';
+    font-family: $ff-base;
     min-height: 100vh;
 }
 
