@@ -30,7 +30,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 50%;
-  outline: 1px solid blue;
   height: 100vh;
 }
 header nav {
@@ -86,6 +85,28 @@ main section.graphic-design .content h2, main section.graphic-design .content p 
 main section.photography .content h2, main section.photography .content p {
   color: hsl(198deg, 62%, 26%);
 }
+main section .cta-btn {
+  position: relative;
+  justify-self: center;
+}
+main section .cta-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -0.5rem;
+  bottom: -0.2rem;
+  z-index: -1;
+  width: calc(100% + 1rem);
+  height: 0.6rem;
+  border-radius: 50px;
+  opacity: 0.4;
+}
+main section .cta-btn.first::after {
+  background-color: hsl(51deg, 100%, 49%);
+}
+main section .cta-btn.second::after {
+  background-color: hsl(7deg, 99%, 70%);
+}
 main section .thumbnails-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -131,6 +152,29 @@ main .testimonials .client-name ~ span {
   font-family: Barlow;
   font-weight: 600;
   color: hsl(168deg, 34%, 41%);
+}
+
+footer {
+  background-color: hsl(210deg, 4%, 67%);
+  padding: 4em 3em;
+  text-align: center;
+  display: grid;
+  gap: 3rem;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-family: Barlow;
+  color: hsl(167deg, 40%, 24%);
+}
+footer .logo img {
+  display: inline;
+}
+footer .social-links {
+  display: flex;
+  margin-inline: auto;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
