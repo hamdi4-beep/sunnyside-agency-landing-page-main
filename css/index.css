@@ -124,7 +124,7 @@ main .testimonials {
   display: grid;
   place-content: center;
   padding: 4em 2em;
-  gap: 3rem;
+  gap: 4rem;
 }
 main .testimonials h3 {
   text-transform: uppercase;
