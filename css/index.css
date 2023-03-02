@@ -71,18 +71,66 @@ main section p {
   color: hsl(210deg, 4%, 67%);
   line-height: 1.8;
 }
+main section.unique {
+  display: grid;
+  align-items: flex-end;
+  position: relative;
+}
+main section.unique .content {
+  position: absolute;
+  margin-top: 2em;
+}
+main section.graphic-design .content h2, main section.graphic-design .content p {
+  color: hsl(167deg, 40%, 24%);
+}
+main section.photography .content h2, main section.photography .content p {
+  color: hsl(198deg, 62%, 26%);
+}
+main section .thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 main .content {
   display: grid;
-  padding: 4em 3em;
-  outline: 1px solid blue;
-}
-main .content h2 {
-  margin-bottom: 0.8em;
+  gap: 2rem;
+  padding: 4em 2em;
 }
 main .content button {
-  margin-top: 2.5em;
   font-weight: 900;
   text-transform: uppercase;
+}
+main .testimonials {
+  display: grid;
+  place-content: center;
+  padding: 4em 2em;
+  gap: 3rem;
+}
+main .testimonials h3 {
+  text-transform: uppercase;
+  color: hsl(168deg, 34%, 41%);
+  letter-spacing: 0.2rem;
+}
+main .testimonials p {
+  color: hsl(167deg, 40%, 24%);
+}
+main .testimonials .client-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 5rem;
+  margin-inline: auto;
+  margin-bottom: 2em;
+}
+main .testimonials .client-name {
+  display: block;
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+main .testimonials .client-name ~ span {
+  font-family: Barlow;
+  font-weight: 600;
+  color: hsl(168deg, 34%, 41%);
 }
 
 /*# sourceMappingURL=index.css.map */
