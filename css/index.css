@@ -155,7 +155,7 @@ main .testimonials .client-name ~ span {
 }
 
 footer {
-  background-color: hsl(210deg, 4%, 67%);
+  background-color: #91d5c6;
   padding: 4em 3em;
   text-align: center;
   display: grid;
