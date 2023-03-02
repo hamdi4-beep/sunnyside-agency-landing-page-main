@@ -14,7 +14,39 @@ header {
     }
 
     .nav-items {
-        display: none;
+        position: absolute;
+        right: 1.5rem;
+        width: calc(100% - 3rem);
+        padding: 1.5em;
+        margin-top: calc(2em + 20px);
+        background-color: white;
+        list-style-type: none;
+        display: grid;
+        justify-content: center;
+
+        li {
+            padding: .8em 1.3em;
+            text-align: center;
+            border-radius: 50px;
+            font-family: $ff-secondary;
+            color: $clr-grayish-blue;
+            
+            &:hover {
+                background-color: $clr-yellow;
+                color: $clr-dark-desaturated-blue;
+                font-weight: $fw-900;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: -20px;
+            content: '';
+            display: block;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid white;
+            justify-self: flex-end;
+        }
     }
 
     .content {
