@@ -45,4 +45,71 @@ main {
             color: $clr-dark-moderate-cyan;
         }
     }
+
+    .unique {
+        display: grid;
+        position: relative;
+
+        .content {
+            position: absolute;
+            align-self: bottom;
+            bottom: 0;
+        }
+
+        &.graphic-design {
+            color: $clr-dark-desaturated-cyan;
+        }
+
+        &.photography {
+            color: $clr-dark-desaturated-blue;
+        }
+    }
+
+    .testimonials {
+        text-align: center;
+        padding: 3.3em 2em;
+        display: grid;
+        gap: 4rem;
+
+        h3 {
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            color: $clr-grayish-blue;
+        }
+
+        p {
+            font-family: $ff-secondary;
+            color: $clr-very-dark-grayish-blue;
+            line-height: 1.5;
+        }
+
+        .client-img {
+            width: 5rem;
+            height: 5rem;
+            margin-inline: auto;
+            margin-bottom: 2em;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .client-name {
+            font-family: $ff-base;
+            font-weight: $fw-900;
+            display: block;
+            margin-top: 2em;
+            margin-bottom: .5em;
+
+            & ~ span {
+                font-family: $ff-secondary;
+                font-weight: lighter;
+                color: $clr-grayish-blue;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .thumbnails-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

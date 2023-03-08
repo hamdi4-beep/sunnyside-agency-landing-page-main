@@ -97,6 +97,62 @@ main .content p {
   margin-block: 1.3em;
   color: hsl(168deg, 34%, 41%);
 }
+main .unique {
+  display: grid;
+  position: relative;
+}
+main .unique .content {
+  position: absolute;
+  align-self: bottom;
+  bottom: 0;
+}
+main .unique.graphic-design {
+  color: hsl(167deg, 40%, 24%);
+}
+main .unique.photography {
+  color: hsl(212deg, 27%, 19%);
+}
+main .testimonials {
+  text-align: center;
+  padding: 3.3em 2em;
+  display: grid;
+  gap: 4rem;
+}
+main .testimonials h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: hsl(210deg, 4%, 67%);
+}
+main .testimonials p {
+  font-family: Barlow;
+  color: hsl(213deg, 9%, 39%);
+  line-height: 1.5;
+}
+main .testimonials .client-img {
+  width: 5rem;
+  height: 5rem;
+  margin-inline: auto;
+  margin-bottom: 2em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .testimonials .client-name {
+  font-family: Fraunces;
+  font-weight: 900;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+main .testimonials .client-name ~ span {
+  font-family: Barlow;
+  font-weight: lighter;
+  color: hsl(210deg, 4%, 67%);
+  font-size: 1rem;
+}
+main .thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 footer {
   background-color: #91d5c6;
