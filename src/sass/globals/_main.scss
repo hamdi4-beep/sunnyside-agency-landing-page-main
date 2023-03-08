@@ -2,64 +2,15 @@
 
 main {
 
-    section {
-        display: flex;
-        flex-direction: column;
+    .content {
+        padding: 3.3em 2em;
         text-align: center;
-
-        h2 {
-            font-family: $ff-base;
-            font-size: 2.5rem;
-            color: $clr-dark-desaturated-blue;
-        }
-
-        p {
-            font-family: $ff-secondary;
-            color: $clr-grayish-blue;
-            line-height: 1.8;
-        }
-
-        &.unique {
-            display: grid;
-            align-items: flex-end;
-            position: relative;
-            
-            .content {
-                position: absolute;
-                margin-top: 2em;
-            }
-        }
-
-        &.graphic-design .content {
-
-            h2, p {
-                color: $clr-dark-desaturated-cyan;
-            }
-        }
-
-        &.photography .content {
-
-            h2, p {
-                color: $clr-dark-blue;
-            }
-        }
 
         .cta-btn {
             position: relative;
-            justify-self: center;
-
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                left: -.5rem;
-                bottom: -.2rem;
-                z-index: -1;
-                width: calc(100% + 1rem);
-                height: .6rem;
-                border-radius: 50px;
-                opacity: .4;
-            }
+            text-transform: uppercase;
+            margin-inline: auto;
+            font-weight: $fw-900;
 
             &.first::after {
                 background-color: $clr-yellow;
@@ -68,61 +19,30 @@ main {
             &.second::after {
                 background-color: $clr-soft-red;
             }
+
+            &.first::after, &.second::after {
+                position: absolute;
+                z-index: -1;
+                left: -.3em;
+                bottom: .01em;
+                content: '';
+                display: block;
+                height: .5em;
+                width: calc(100% + .6em);
+                opacity: .5;
+                border-radius: 30px;
+            }
         }
 
-        .thumbnails-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    .content {
-        display: grid;
-        gap: 2rem;
-        padding: 4em 2em;
-
-        button {
-            font-weight: $fw-900;
-            text-transform: uppercase;
-        }
-    }
-
-    .testimonials {
-        display: grid;
-        place-content: center;
-        padding: 4em 2em;
-        gap: 4rem;
-        
-        h3 {
-            text-transform: uppercase;
-            color: $clr-dark-moderate-cyan;
-            letter-spacing: .2rem;
+        h2 {
+            font-size: 2.3rem;
+            line-height: 1;
         }
 
         p {
-            color: $clr-dark-desaturated-cyan;
-        }
-
-        .client-img {
-            border-radius: 50%;
-            overflow: hidden;
-            width: 5rem;
-            margin-inline: auto;
-            margin-bottom: 2em;
-        }
-
-        .client-name {
-            display: block;
-            font-weight: $fw-900;
-            font-size: 1.3rem;
-            margin-top: 2em;
-            margin-bottom: .5em;
-
-            & ~ span {
-                font-family: $ff-secondary;
-                font-weight: $fw-600;
-                color: $clr-dark-moderate-cyan;
-            }
+            font-family: $ff-secondary;
+            margin-block: 1.3em;
+            color: $clr-dark-moderate-cyan;
         }
     }
 }
