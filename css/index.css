@@ -41,9 +41,13 @@ header nav {
   top: 0;
   justify-content: space-between;
 }
+header .nav-icon {
+  cursor: pointer;
+}
 header .nav-items {
   font-family: Barlow;
   display: none;
+  color: hsl(210deg, 4%, 67%);
 }
 header .content {
   text-align: center;
@@ -248,9 +252,43 @@ footer .social-links {
   main .thumbnails-list > * {
     flex: 1;
   }
+  footer {
+    justify-content: center;
+  }
+  footer ul {
+    gap: 4rem;
+  }
 }
-.hidden {
-  display: none !important;
+.show {
+  position: absolute;
+  z-index: 999;
+  top: 6rem;
+  right: 1rem;
+  width: calc(100% - 2rem);
+  background-color: white;
+  display: grid !important;
+  justify-content: center;
+  padding-block: 1.5em;
+  gap: 0.5rem;
+}
+.show::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 0;
+  display: inline;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid white;
+}
+.show li {
+  padding: 1em 2em;
+  cursor: pointer;
+}
+.show li:last-child {
+  background-color: yellow;
+  border-radius: 50px;
+  color: black;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=index.css.map */
