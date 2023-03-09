@@ -80,11 +80,13 @@ main .content .cta-btn {
   margin-inline: auto;
   font-weight: 900;
 }
-main .content .cta-btn.first::after {
+main .content .cta-btn.first:hover::after {
   background-color: hsl(51deg, 100%, 49%);
+  cursor: pointer;
 }
-main .content .cta-btn.second::after {
+main .content .cta-btn.second:hover::after {
   background-color: hsl(7deg, 99%, 70%);
+  cursor: pointer;
 }
 main .content .cta-btn.first::after, main .content .cta-btn.second::after {
   position: absolute;
@@ -186,6 +188,11 @@ footer .social-links {
   display: flex;
   margin-inline: auto;
   gap: 2rem;
+}
+footer .social-links img:hover,
+footer li:hover {
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

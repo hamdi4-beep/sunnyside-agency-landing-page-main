@@ -24,4 +24,10 @@ footer {
         margin-inline: auto;
         gap: 2rem;
     }
+
+    .social-links img:hover,
+    li:hover {
+        color: $clr-white;
+        cursor: pointer;
+    }
 }

@@ -12,15 +12,18 @@ main {
             margin-inline: auto;
             font-weight: $fw-900;
 
-            &.first::after {
+            &.first:hover::after {
                 background-color: $clr-yellow;
+                cursor: pointer;
             }
 
-            &.second::after {
+            &.second:hover::after {
                 background-color: $clr-soft-red;
+                cursor: pointer;
             }
 
-            &.first::after, &.second::after {
+            &.first::after,
+            &.second::after {
                 position: absolute;
                 z-index: -1;
                 left: -.3em;
