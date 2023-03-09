@@ -23,6 +23,7 @@ button {
   font: inherit;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 ul {
@@ -82,11 +83,9 @@ main .content .cta-btn {
 }
 main .content .cta-btn.first:hover::after {
   background-color: hsl(51deg, 100%, 49%);
-  cursor: pointer;
 }
 main .content .cta-btn.second:hover::after {
   background-color: hsl(7deg, 99%, 70%);
-  cursor: pointer;
 }
 main .content .cta-btn.first::after, main .content .cta-btn.second::after {
   position: absolute;

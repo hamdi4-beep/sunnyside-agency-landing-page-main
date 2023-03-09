@@ -14,12 +14,10 @@ main {
 
             &.first:hover::after {
                 background-color: $clr-yellow;
-                cursor: pointer;
             }
 
             &.second:hover::after {
                 background-color: $clr-soft-red;
-                cursor: pointer;
             }
 
             &.first::after,
