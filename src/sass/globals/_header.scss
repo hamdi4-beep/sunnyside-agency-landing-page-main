@@ -14,6 +14,7 @@ header {
     }
 
     .nav-items {
+        font-family: $ff-secondary;
         display: none;
     }
 
@@ -36,6 +37,7 @@ header {
             line-height: 1;
             text-transform: uppercase;
             margin-bottom: 1em;
+            letter-spacing: .5rem;
         }
     }
 }

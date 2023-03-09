@@ -25,6 +25,10 @@ button {
   outline: none;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   position: relative;
   color: hsl(0deg, 0%, 100%);
@@ -38,6 +42,7 @@ header nav {
   justify-content: space-between;
 }
 header .nav-items {
+  font-family: Barlow;
   display: none;
 }
 header .content {
@@ -58,6 +63,7 @@ header .content h1 {
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 1em;
+  letter-spacing: 0.5rem;
 }
 
 main .content {
@@ -89,12 +95,13 @@ main .content .cta-btn.first::after, main .content .cta-btn.second::after {
   border-radius: 30px;
 }
 main .content h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
+  font-weight: 900;
   line-height: 1;
 }
 main .content p {
   font-family: Barlow;
-  margin-block: 1.3em;
+  margin-block: 1.5em;
   color: hsl(168deg, 34%, 41%);
 }
 main .unique {
@@ -178,8 +185,65 @@ footer .social-links {
 }
 
 @media (min-width: 768px) {
-  article {
+  header nav {
+    align-items: center;
+  }
+  header .nav-items {
     display: flex;
+    gap: 2rem;
+    font-weight: lighter;
+  }
+  header .nav-items li {
+    padding: 0.5em 1em;
+    line-height: 1;
+  }
+  header .nav-items li:last-child {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+  }
+  header .nav-icon {
+    display: none;
+  }
+  article {
+    width: 100%;
+  }
+  article section {
+    display: flex;
+  }
+  article section picture,
+article section img {
+    width: 100%;
+    height: 100%;
+  }
+  article section > * {
+    flex: 1;
+  }
+  article section.first {
+    outline: 1px solid blue;
+    flex-direction: row-reverse;
+  }
+  article section .content {
+    display: grid;
+    place-content: center;
+    padding: 0;
+    text-align: left;
+  }
+  article section .content .cta-btn {
+    display: inline-block;
+    margin-left: 0;
+  }
+  article section .content .inner-wrapper {
+    padding: 3em;
+  }
+  .flex {
+    outline: 1px solid green;
+    display: flex;
+  }
+  .flex .content {
+    outline: 1px solid green;
+    text-align: center;
+    padding-inline: 2em;
   }
 }
 .hidden {
