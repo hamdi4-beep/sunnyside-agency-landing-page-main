@@ -110,7 +110,6 @@ main .content p {
   color: hsl(168deg, 34%, 41%);
 }
 main .unique {
-  display: grid;
   position: relative;
 }
 main .unique .content {
@@ -127,18 +126,21 @@ main .unique.photography {
 main .testimonials {
   text-align: center;
   padding: 3.3em 2em;
-  display: grid;
-  gap: 4rem;
 }
 main .testimonials h3 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: hsl(210deg, 4%, 67%);
+  margin-bottom: 4em;
 }
 main .testimonials p {
   font-family: Barlow;
   color: hsl(213deg, 9%, 39%);
   line-height: 1.5;
+}
+main .testimonials .clients-list {
+  display: grid;
+  gap: 4rem;
 }
 main .testimonials .client-img {
   width: 5rem;
@@ -241,10 +243,10 @@ footer li:hover {
   article section .content .inner-wrapper {
     padding: 3em;
   }
-  .flex {
-    display: flex;
+  .testimonials > .clients-list {
+    display: flex !important;
   }
-  .flex .content {
+  .testimonials > .clients-list .content {
     text-align: center;
     padding-inline: 2em;
     margin-bottom: 1em;

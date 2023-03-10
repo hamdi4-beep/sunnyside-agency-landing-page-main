@@ -63,8 +63,8 @@
         }
     }
 
-    .flex {
-        display: flex;
+    .testimonials > .clients-list {
+        display: flex !important;
 
         .content {
             text-align: center;

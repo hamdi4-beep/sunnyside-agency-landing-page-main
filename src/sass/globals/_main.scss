@@ -49,7 +49,6 @@ main {
     }
 
     .unique {
-        display: grid;
         position: relative;
 
         .content {
@@ -70,19 +69,23 @@ main {
     .testimonials {
         text-align: center;
         padding: 3.3em 2em;
-        display: grid;
-        gap: 4rem;
 
         h3 {
             text-transform: uppercase;
             letter-spacing: .2rem;
             color: $clr-grayish-blue;
+            margin-bottom: 4em;
         }
 
         p {
             font-family: $ff-secondary;
             color: $clr-very-dark-grayish-blue;
             line-height: 1.5;
+        }
+
+        .clients-list {
+            display: grid;
+            gap: 4rem;
         }
 
         .client-img {
