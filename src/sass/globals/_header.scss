@@ -1,48 +1,32 @@
-@use './variables' as *;
+@use './variables.scss' as *;
 
 header {
-    position: relative;
-    color: $clr-white;
+    outline: 1px solid blue;
+    height: 100vh;
+    text-align: center;
+
+    picture {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
 
     nav {
-        position: absolute;
-        width: 100%;
-        padding: 1.2em;
         display: flex;
-        top: 0;
         justify-content: space-between;
+        padding: 2em;
     }
 
-    .nav-icon {
-        cursor: pointer;
+    .big-text {
+        font-family: $ff-primary;
+        text-transform: uppercase;
+        font-size: 4rem;
+        margin-top: 1em;
+        color: white;
     }
 
-    .nav-items {
-        font-family: $ff-secondary;
-        display: none;
-        color: $clr-grayish-blue;
-    }
-
-    .content {
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 100%;
-        padding: 1.2em;
-        transform: translate(-50%, -50%);
-
-        img {
-            display: inline;
-        }
-
-        h1 {
-            font-family: $ff-base;
-            font-size: 3.3rem;
-            line-height: 1;
-            text-transform: uppercase;
-            margin-bottom: 1em;
-            letter-spacing: .5rem;
-        }
+    .arrow-down {
+        display: inline;
+        margin-top: 2.8em;
     }
 }

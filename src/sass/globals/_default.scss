@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use './variables.scss' as *;
 
 *,
 *::before,
@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: $ff-base;
+    font-family: $ff-secondary;
     min-height: 100vh;
 }
 
@@ -17,17 +17,4 @@ picture,
 img {
     display: block;
     max-width: 100%;
-}
-
-button {
-    background: none;
-    display: block;
-    font: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
 }

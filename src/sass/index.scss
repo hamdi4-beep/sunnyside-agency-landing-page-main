@@ -1,36 +1,5 @@
 @forward 'globals';
 
-.show {
-    position: absolute;
-    z-index: 999;
-    top: 6rem;
-    right: 1rem;
-    width: calc(100% - 2rem);
-    background-color: white;
-    display: grid !important;
-    justify-content: center;
-    padding-block: 1.5em;
-    gap: .5rem;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: -25px;
-        right: 0;
-        display: inline;
-        border-left: 25px solid transparent;
-        border-bottom: 25px solid white;
-    }
-
-    li {
-        padding: 1em 2em;
-        cursor: pointer;
-
-        &:last-child {
-            background-color: yellow;
-            border-radius: 50px;
-            color: black;
-            text-transform: uppercase;
-        }
-    }
+.nav-items {
+    display: none;
 }
