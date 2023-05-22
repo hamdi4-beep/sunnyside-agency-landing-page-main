@@ -8,6 +8,7 @@ header {
     picture {
         position: absolute;
         inset: 0;
+        height: 100%;
         z-index: -1;
     }
 
@@ -15,6 +16,53 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 2em;
+
+        .nav-icon {
+            margin-left: auto;
+            text-align: right;
+
+            img {
+                display: inline;
+            }
+        }
+    }
+
+    .nav-items {
+        position: absolute;
+        left: 2rem;
+        margin-top: calc(1em + 30px);
+        padding: 1.5em;
+        width: calc(100% - 4rem);
+        background-color: $clr-white;
+        display: grid;
+        gap: .5rem;
+        place-content: center;
+        color: black;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -30px;
+            right: 0;
+            border-left: 30px solid transparent;
+            border-bottom: 30px solid white;
+        }
+
+        li {
+            color: $clr-dark-moderate-cyan;
+            padding: 1em 1.5em;
+        }
+
+        li:hover,
+        li:last-child {
+            background-color: $clr-yellow;
+            border-radius: 50px;
+            color: $clr-very-dark-desaturated-blue;
+            font-weight: $fw-700;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
     }
 
     .big-text {
