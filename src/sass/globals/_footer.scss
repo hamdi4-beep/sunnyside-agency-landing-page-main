@@ -1,0 +1,25 @@
+@use './variables.scss' as *;
+
+footer {
+    background-color: rgb(144, 212, 197);
+    padding: 4em 3em;
+    display: grid;
+    gap: 3rem;
+    place-content: center;
+
+    img {
+        margin-inline: auto;
+    }
+
+    ul,
+    .social-links {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        color: $clr-dark-moderate-cyan;
+    }
+
+    ul {
+        gap: 4rem;
+    }
+}

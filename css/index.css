@@ -22,16 +22,18 @@ img {
   max-width: 100%;
 }
 
-header {
-  outline: 1px solid blue;
-  height: 100vh;
-  text-align: center;
+button {
+  font: inherit;
+  background: none;
+  border: none;
 }
-header picture {
-  position: absolute;
-  inset: 0;
-  height: 100%;
-  z-index: -1;
+
+header {
+  text-align: center;
+  background: url(../images/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 header nav {
   display: flex;
@@ -82,13 +84,130 @@ header .nav-items li:last-child {
 header .big-text {
   font-family: Fraunces;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3.3rem;
   margin-top: 1em;
   color: white;
 }
 header .arrow-down {
   display: inline;
   margin-top: 2.8em;
+}
+
+main section.first button::after {
+  background-color: hsl(51deg, 100%, 49%);
+}
+main section.reversed button::after {
+  background-color: hsl(7deg, 99%, 70%);
+}
+main section .content {
+  text-align: center;
+}
+main section .content h2 {
+  font-family: Fraunces;
+  font-size: 2.4rem;
+}
+main section .content p {
+  margin-block: 2em;
+  color: hsl(168deg, 34%, 41%);
+  line-height: 1.6;
+}
+main section .content button {
+  position: relative;
+  font-family: Fraunces;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+main section .content button::after {
+  position: absolute;
+  left: -8px;
+  bottom: -2px;
+  content: "";
+  display: block;
+  width: calc(100% + 15px);
+  height: 10px;
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0.4;
+}
+main section .content .inner-wrapper {
+  padding: 4em 2em;
+}
+main section.unique {
+  position: relative;
+}
+main section.unique .content {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  padding: 2em;
+}
+main section.graphic-design h2, main section.graphic-design p {
+  color: hsl(167deg, 40%, 24%);
+}
+main section.photography h2, main section.photography p {
+  color: hsl(198deg, 62%, 26%);
+}
+main section.testimonials {
+  text-align: center;
+  padding: 4em 2em;
+}
+main section.testimonials h3 {
+  font-family: Fraunces;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: hsl(210deg, 4%, 67%);
+}
+main section.testimonials p {
+  color: hsl(213deg, 9%, 39%);
+  line-height: 1.6;
+}
+main section.testimonials .clients-list {
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+}
+main section.testimonials .clients-list .client-img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-block: 2.5em;
+  margin-inline: auto;
+  overflow: hidden;
+}
+main section.testimonials .clients-list .client-name {
+  font-family: Fraunces;
+  font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+  display: block;
+}
+main section.testimonials .clients-list .client-name + span {
+  color: hsl(210deg, 4%, 67%);
+}
+main section .thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+  background-color: rgb(144, 212, 197);
+  padding: 4em 3em;
+  display: grid;
+  gap: 3rem;
+  place-content: center;
+}
+footer img {
+  margin-inline: auto;
+}
+footer ul,
+footer .social-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  color: hsl(168deg, 34%, 41%);
+}
+footer ul {
+  gap: 4rem;
 }
 
 .hidden {

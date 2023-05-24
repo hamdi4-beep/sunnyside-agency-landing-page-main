@@ -1,16 +1,11 @@
 @use './variables.scss' as *;
 
 header {
-    outline: 1px solid blue;
-    height: 100vh;
     text-align: center;
-
-    picture {
-        position: absolute;
-        inset: 0;
-        height: 100%;
-        z-index: -1;
-    }
+    background: url(../images/mobile/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 
     nav {
         display: flex;
@@ -68,7 +63,7 @@ header {
     .big-text {
         font-family: $ff-primary;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 3.3rem;
         margin-top: 1em;
         color: white;
     }

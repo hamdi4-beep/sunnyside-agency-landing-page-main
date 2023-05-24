@@ -1,0 +1,126 @@
+@use './variables.scss' as *;
+
+$p-lh: 1.6;
+
+main {
+
+    section {
+
+        &.first button::after {
+            background-color: $clr-yellow;
+        }
+
+        &.reversed button::after {
+            background-color: $clr-soft-red;
+        }
+
+        .content {
+            text-align: center;
+
+            h2 {
+                font-family: $ff-primary;
+                font-size: 2.4rem;
+            }
+
+            p {
+                margin-block: 2em;
+                color: $clr-dark-moderate-cyan;
+                line-height: $p-lh;
+            }
+
+            button {
+                position: relative;
+                font-family: $ff-primary;
+                text-transform: uppercase;
+                font-weight: $fw-900;
+
+                &::after {
+                    position: absolute;
+                    left: -8px;
+                    bottom: -2px;
+                    content: '';
+                    display: block;
+                    width: calc(100% + 15px);
+                    height: 10px;
+                    border-radius: 50px;
+                    z-index: -1;
+                    opacity: .4;
+                }
+            }
+
+            .inner-wrapper {
+                padding: 4em 2em;
+            }
+        }
+
+        &.unique {
+            position: relative;
+
+            .content {
+                position: absolute;
+                bottom: 0;
+                z-index: 999;
+                padding: 2em;
+            }
+        }
+
+        &.graphic-design h2,
+        &.graphic-design p {
+            color: $clr-dark-desaturated-cyan;
+        }
+
+        &.photography h2,
+        &.photography p {
+            color: $clr-dark-blue;
+        }
+
+        &.testimonials {
+            text-align: center;
+            padding: 4em 2em;
+
+            h3 {
+                font-family: $ff-primary;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+                color: $clr-grayish-blue;
+            }
+
+            p {
+                color: $clr-very-dark-grayish-blue;
+                line-height: $p-lh;
+            }
+
+            .clients-list {
+                display: grid;
+                place-content: center;
+                gap: 3rem;
+
+                .client-img {
+                    border-radius: 50%;
+                    width: 5rem;
+                    height: 5rem;
+                    margin-block: 2.5em;
+                    margin-inline: auto;
+                    overflow: hidden;
+                }
+
+                .client-name {
+                    font-family: $ff-primary;
+                    font-weight: $fw-900;
+                    margin-top: 2em;
+                    margin-bottom: .7em;
+                    display: block;
+                }
+
+                .client-name + span {
+                    color: $clr-grayish-blue;
+                }
+            }
+        }
+
+        .thumbnails-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
