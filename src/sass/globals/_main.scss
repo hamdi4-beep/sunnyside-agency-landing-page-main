@@ -16,6 +16,7 @@ main {
 
         .content {
             text-align: center;
+            padding: 2em 4em;
 
             h2 {
                 font-family: $ff-primary;
@@ -46,10 +47,6 @@ main {
                     z-index: -1;
                     opacity: .4;
                 }
-            }
-
-            .inner-wrapper {
-                padding: 4em 2em;
             }
         }
 

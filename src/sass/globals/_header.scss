@@ -10,11 +10,13 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         padding: 2em;
 
         .nav-icon {
             margin-left: auto;
             text-align: right;
+            cursor: pointer;
 
             img {
                 display: inline;
@@ -32,6 +34,7 @@ header {
         display: grid;
         gap: .5rem;
         place-content: center;
+        display: none;
         color: black;
 
         &::after {
@@ -66,6 +69,7 @@ header {
         font-size: 3.3rem;
         margin-top: 1em;
         color: white;
+        letter-spacing: .1em;
     }
 
     .arrow-down {
